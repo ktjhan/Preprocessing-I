@@ -62,6 +62,9 @@ html, body {
 
 @main-font: 'Montserrat', sans-serif;
 
+@media (min-width:800px) {
+
+header{
 
 .headericons {
 		display: flex;
@@ -69,18 +72,24 @@ html, body {
 		background-color: #E3D1B1;
 
 			nav {
+				font-family: @main-font;
+				font-size: 1.2rem;
+				display: flex;
 				margin-top: 3%;
-				margin-right: 4%;
 				margin-bottom: 3%;
+				width: 70vh;
+				align-items: center;
+				justify-content: space-evenly;
 
 				a {
     			text-decoration: none;
+
 			}
 		}
+	}
 }
 
 #content {
-
 	font-family: @main-font;
 	background-color: lightgray;
 
@@ -119,7 +128,7 @@ html, body {
 				justify-content: space-evenly;
 
 					.headersummary {
-						font-size: 14px;
+						font-size: 20px;
 						padding-top: 5%;
 						padding-bottom: 5%;
 						width: 45%;
@@ -145,6 +154,13 @@ html, body {
 		.working {
 			display: flex;
 			flex-direction: column;
+
+			h2 {
+				font-family: @main-font;
+				font-size: 40px;
+				text-align: center;
+				margin-top: 2%;
+			}
 
 			.first-row {
 				font-family: @main-font;
@@ -177,7 +193,7 @@ html, body {
 						}
 
 						.Slapp {
-							margin-left: 18px;
+							margin-left: 3px;
 							margin-top: 30px;
 
 									h3 {
@@ -194,13 +210,14 @@ html, body {
 						justify-content: space-evenly;
 
 						.main-image {
-							margin-left: 7%;
+							margin-left: 8%;
 						}
 
 						.Facebook {
 									font-size: 15px;
 									margin-left: 7%;
 									margin-top: 30px;
+									margin-bottom: 5%;
 
 										h3{
 											font-size: 30px;
@@ -210,6 +227,139 @@ html, body {
 				}
 			}
 
+#project {
+
+			.project-list {
+				display: flex;
+				flex-direction: column;
+
+				h2 {
+					font-family: @main-font;
+					font-size: 40px;
+					text-align: center;
+					margin-top: 2%;
+				}
+
+				.first-row {
+					font-family: @main-font;
+					display: flex;
+					flex-direction: row;
+					margin-top: 2.5%;
+					align-items: center;
+					justify-content: space-evenly;
+					margin-left: 25%;
+
+						.airbnb {
+								font-size: 15px;
+								padding-top: 3%;
+								font-size: 15px;
+
+							h3 {
+								font-size: 30px;
+								margin-left: 8%;
+							}
+
+							p {
+								width: 60%;
+								margin-left: 8%;
+							}
+
+							ul {
+								margin-left: 10%;
+							}
+
+							a {
+								text-decoration: none;
+								margin-left: 8%;
+								margin-top: 3%;
+							}
+						}
+					}
+
+					.second-row {
+						font-family: @main-font;
+						margin-top: 5%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-evenly;
+						margin-left: 25%;
+
+							.main-image {
+								margin-left: 0.5%;
+							}
+
+							.lambda-times {
+								margin-left: 18px;
+								margin-top: 30px;
+								font-size: 15px;
+
+								h3 {
+									font-size: 30px;
+									margin-left: 8%;
+								}
+
+								p {
+									width: 60%;
+									margin-left: 8%;
+								}
+
+								ul {
+									margin-left: 10%;
+								}
+
+								a {
+								  text-decoration: none;
+									margin-left: 8%;
+									margin-top: 3%;
+								}
+							}
+						}
+
+						.third-row {
+							font-family: @main-font;
+							display: flex;
+							flex-direction: row;
+							margin-top: 5%;
+							align-items: center;
+							justify-content: space-evenly;
+							margin-left: 25%;
+
+							.main-image {
+								margin-left: 0.5%;
+								margin-bottom: 5%;
+							}
+
+							.yodelme {
+										font-size: 15px;
+										margin-left: 18px;
+										margin-top: 30px;
+										margin-bottom: 5%;
+
+										h3 {
+											font-size: 30px;
+											margin-left: 8%;
+										}
+
+										p {
+											width: 60%;
+											margin-left: 8%;
+										}
+
+										ul {
+											margin-left: 10%;
+										}
+
+
+										a {
+											text-decoration: none;
+											margin-left: 8%;
+											margin-top: 3%;
+										}
+							}
+						}
+					}
+				}
 
 footer {
 
@@ -220,5 +370,673 @@ footer {
 			flex-direction: column;
 			align-items: center;
 			font-family: @main-font;
+
+			.links {
+				display: flex;
+				width: 50vh;
+				align-items: center;
+				justify-content: space-evenly;
+				margin-top: 5vh;
+
+				a {
+					text-decoration: none;
+				}
+			}
 		}
 	}
+}
+
+
+@media (min-width: 501px) and (max-width: 799px) {
+
+header{
+
+.headericons {
+		display: flex;
+		flex-direction: row;
+		background-color: #E3D1B1;
+
+			nav {
+				font-family: @main-font;
+				font-size: 1.2rem;
+				display: flex;
+				margin-top: 3%;
+				margin-bottom: 3%;
+				width: 160vh;
+				align-items: center;
+				justify-content: space-evenly;
+
+				a {
+    			text-decoration: none;
+
+			}
+		}
+	}
+}
+
+#content {
+	font-family: @main-font;
+	background-color: lightgray;
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+			.contentWriting {
+				font-size: 20px;
+				padding-top: 13%;
+				margin-left: 3.5%;
+
+					h1 {
+						font-size: 50px;
+					}
+				}
+
+			.main-image1 {
+				margin-top: 5%;
+				margin-bottom: 5%;
+				margin-right: 3%;
+
+				.mypic {
+					border-radius: 20px;
+					height: 90%;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+#summary {
+
+			.summary2 {
+				font-family: @main-font;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+
+					.headersummary {
+						font-size: 20px;
+						padding-top: 5%;
+						padding-bottom: 5%;
+						width: 45%;
+
+							h2 {
+								font-size: 30px;
+							}
+					}
+
+					.skills {
+						margin-top: 7%;
+						font-size: 20px;
+
+							h2 {
+								font-size: 30px;
+						}
+					}
+				}
+			}
+
+#work-history {
+
+		.working {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-family: @main-font;
+				font-size: 40px;
+				text-align: center;
+				margin-top: 2%;
+			}
+
+			.first-row {
+				font-family: @main-font;
+				display: flex;
+				flex-direction: row;
+				margin-top: 5%;
+				justify-content: space-evenly;
+
+					.shippa {
+							font-size: 15px;
+							padding-top: 3%;
+							margin-right: 20px;
+
+						h3 {
+							font-size: 30px;
+						}
+					}
+				}
+
+				.second-row {
+					font-family: @main-font;
+					margin-top: 5%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					margin-left: 1%;
+
+						.main-image {
+							margin-left: 0.5%;
+						}
+
+						.Slapp {
+							// margin-left: 18px;
+							margin-top: 30px;
+							font-size: 15px;
+
+							h3 {
+								font-size: 30px;
+							}
+						}
+					}
+
+					.third-row {
+						font-family: @main-font;
+						display: flex;
+						flex-direction: row;
+						margin-top: 5%;
+						justify-content: space-evenly;
+
+						.main-image {
+							margin-left: 14%;
+						}
+
+						.Facebook {
+									margin-left: 11%;
+									margin-top: 30px;
+									margin-bottom: 5%;
+									font-size: 15px;
+
+							h3{
+								font-size: 30px;
+							}
+						}
+					}
+				}
+			}
+
+#project {
+
+			.project-list {
+				display: flex;
+				flex-direction: column;
+
+				h2 {
+					font-family: @main-font;
+					font-size: 40px;
+					text-align: center;
+					margin-top: 2%;
+				}
+
+				.first-row {
+					font-family: @main-font;
+					display: flex;
+					flex-direction: row;
+					margin-top: 2.5%;
+					align-items: center;
+					justify-content: space-evenly;
+					margin-left: 25%;
+
+						.airbnb {
+								font-size: 15px;
+								padding-top: 3%;
+								font-size: 15px;
+
+							h3 {
+								font-size: 30px;
+								margin-left: 8%;
+							}
+
+							p {
+								width: 60%;
+								margin-left: 8%;
+							}
+
+							ul {
+								margin-left: 10%;
+							}
+
+							a {
+								text-decoration: none;
+								margin-left: 8%;
+								margin-top: 3%;
+							}
+						}
+					}
+
+					.second-row {
+						font-family: @main-font;
+						margin-top: 5%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-evenly;
+						margin-left: 25%;
+
+							.main-image {
+								margin-left: 0.5%;
+							}
+
+							.lambda-times {
+								margin-left: 18px;
+								margin-top: 30px;
+								font-size: 15px;
+
+								h3 {
+									font-size: 30px;
+									margin-left: 8%;
+								}
+
+								p {
+									width: 60%;
+									margin-left: 8%;
+								}
+
+								ul {
+									margin-left: 10%;
+								}
+
+								a {
+								  text-decoration: none;
+									margin-left: 8%;
+									margin-top: 3%;
+								}
+							}
+						}
+
+						.third-row {
+							font-family: @main-font;
+							display: flex;
+							flex-direction: row;
+							margin-top: 5%;
+							align-items: center;
+							justify-content: space-evenly;
+							margin-left: 25%;
+
+							.main-image {
+								margin-left: 0.5%;
+								margin-bottom: 5%;
+							}
+
+							.yodelme {
+										font-size: 15px;
+										margin-left: 18px;
+										margin-top: 30px;
+										margin-bottom: 5%;
+
+										h3 {
+											font-size: 30px;
+											margin-left: 8%;
+										}
+
+										p {
+											width: 60%;
+											margin-left: 8%;
+										}
+
+										ul {
+											margin-left: 10%;
+										}
+
+
+										a {
+											text-decoration: none;
+											margin-left: 8%;
+											margin-top: 3%;
+										}
+							}
+						}
+					}
+				}
+
+footer {
+
+		#ending {
+			padding-top: 4%;
+			padding-bottom: 4%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: @main-font;
+
+			.links {
+				display: flex;
+				width: 50vh;
+				align-items: center;
+				justify-content: space-evenly;
+				margin-top: 5vh;
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:500px) {
+
+header{
+
+.headericons {
+		display: flex;
+		background-color: #E3D1B1;
+		width: 110vh;
+
+			nav {
+				font-family: @main-font;
+				font-size: 1.2rem;
+				display: flex;
+				flex-direction: column;
+				margin-top: 3%;
+				margin-bottom: 3%;
+				width: 80vh;
+				text-align: center;
+
+				a {
+    			text-decoration: none;
+					margin-top: 5%;
+
+			}
+		}
+	}
+}
+
+#content {
+	font-family: @main-font;
+	background-color: lightgray;
+	width: 110vh;
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+			.contentWriting {
+				font-size: 20px;
+				padding-top: 10%;
+				padding-bottom: 10%;
+				width: 95%;
+
+					h1 {
+						font-size: 50px;
+					}
+				}
+
+			.main-image1 {
+				margin-top: 5%;
+				margin-bottom: 5%;
+
+				.mypic {
+					display: none;
+				}
+			}
+		}
+	}
+
+
+#summary {
+
+			.summary2 {
+				font-family: @main-font;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+
+					.headersummary {
+						font-size: 20px;
+						padding-top: 5%;
+						padding-bottom: 5%;
+						padding-left: 3%;
+						width: 90%;
+
+							h2 {
+								font-size: 30px;
+							}
+					}
+
+					.skills {
+						padding-top: 7%;
+						font-size: 20px;
+						padding-bottom: 7%;
+						text-align: center;
+
+							h2 {
+								font-size: 30px;
+						}
+					}
+				}
+			}
+
+#work-history {
+
+		.working {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-family: @main-font;
+				font-size: 40px;
+				text-align: center;
+				margin-top: 2%;
+			}
+
+			.first-row {
+				font-family: @main-font;
+				display: flex;
+				flex-direction: column;
+				margin-top: 5%;
+				justify-content: space-evenly;
+
+				.main-image {
+					text-align: center;
+				}
+					.shippa {
+							font-size: 15px;
+							padding-top: 3%;
+							text-align: center;
+
+						h3 {
+							font-size: 30px;
+						}
+					}
+				}
+
+				.second-row {
+					font-family: @main-font;
+					margin-top: 5%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					margin-left: 1%;
+
+						.main-image {
+							text-align: center;
+							margin-top: 5%;
+						}
+
+						.Slapp {
+							margin-left: 18px;
+							margin-top: 30px;
+							text-align: center;
+
+							h3 {
+								font-size: 30px;
+							}
+						}
+					}
+
+					.third-row {
+						font-family: @main-font;
+						display: flex;
+						flex-direction: column;
+						margin-top: 5%;
+						justify-content: space-evenly;
+
+						.main-image {
+							text-align: center;
+						}
+
+						.Facebook {
+									margin-left: 7%;
+									margin-top: 30px;
+									margin-bottom: 5%;
+									text-align: center;
+
+										h3{
+											font-size: 30px;
+							}
+						}
+					}
+				}
+			}
+
+#project {
+
+			.project-list {
+				display: flex;
+				flex-direction: column;
+
+				h2 {
+					font-family: @main-font;
+					font-size: 40px;
+					text-align: center;
+					margin-top: 2%;
+				}
+
+				.first-row {
+					font-family: @main-font;
+					display: flex;
+					flex-direction: column;
+					margin-top: 2.5%;
+					align-items: center;
+					justify-content: space-evenly;
+
+					.main-image {
+						text-align: center;
+					}
+
+						.airbnb {
+								font-size: 15px;
+								padding-top: 3%;
+								font-size: 15px;
+								text-align: center;
+
+							h3 {
+								font-size: 30px;
+							}
+
+							p {
+								width: 60%;
+								margin-left: 20%;
+							}
+
+
+							a {
+								text-decoration: none;
+								margin-top: 3%;
+							}
+						}
+					}
+
+					.second-row {
+						font-family: @main-font;
+						margin-top: 5%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: space-evenly;
+
+
+							.main-image {
+								text-align: center;
+							}
+
+							.lambda-times {
+								margin-top: 30px;
+								font-size: 15px;
+								text-align: center;
+
+								h3 {
+									font-size: 30px;
+									text-align: center;
+								}
+
+								p {
+									width: 100%;
+									text-align: center;
+								}
+
+
+								a {
+									text-decoration: none;
+									margin-top: 3%;
+								}
+							}
+						}
+
+						.third-row {
+							font-family: @main-font;
+							display: flex;
+							flex-direction: column;
+							margin-top: 5%;
+							align-items: center;
+							justify-content: space-evenly;
+
+							.main-image {
+								text-align: center;
+								margin-bottom: 5%;
+							}
+
+							.yodelme {
+										font-size: 15px;
+										margin-top: 30px;
+										margin-bottom: 5%;
+										text-align: center;
+
+										h3 {
+											font-size: 30px;
+											text-align: center;
+										}
+
+										p {
+											width: 100%;
+											text-align: center;
+										}
+
+
+										a {
+											text-decoration: none;
+											margin-top: 3%;
+										}
+							}
+						}
+					}
+				}
+
+footer {
+
+		#ending {
+			padding-top: 4%;
+			padding-bottom: 4%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: @main-font;
+
+			.links {
+				display: flex;
+				width: 50vh;
+				align-items: center;
+				justify-content: space-evenly;
+				margin-top: 5vh;
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
